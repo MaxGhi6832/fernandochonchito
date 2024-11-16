@@ -1,0 +1,103 @@
+/* Fondo del cuerpo */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #eceff1); /* Tonos celestes y grises */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del formulario */
+.login-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación del contenedor */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título */
+.login-container h1 {
+  font-size: 24px;
+  color: #37474f; /* Azul oscuro/gris */
+  margin-bottom: 20px;
+}
+
+/* Etiquetas */
+.login-container label {
+  font-size: 14px;
+  color: #607d8b; /* Gris azulado */
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #b0bec5; /* Gris suave */
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background: #eceff1; /* Fondo gris claro */
+  transition: border-color 0.3s ease;
+}
+
+/* Resaltar campo al enfocarlo */
+.login-container input:focus {
+  outline: none;
+  border-color: #0288d1; /* Azul claro */
+}
+
+/* Botón */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #0288d1; /* Azul claro */
+  background: linear-gradient(135deg, #0288d1, #01579b); /* Degradado azul */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-container button:hover {
+  background: linear-gradient(135deg, #01579b, #0288d1); /* Inversión del degradado */
+}
+
+/* Mensaje de error */
+.error-message {
+  color: #d32f2f; /* Rojo para errores */
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Efecto sutil de sombra en botones e inputs */
+.login-container input,
+.login-container button {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
